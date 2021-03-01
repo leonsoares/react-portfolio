@@ -1,0 +1,15 @@
+.section-container {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  text-align: right;
+  align-items: center;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section-content {
+  display: flex;
+  margin: auto;
+  align-items: center;
+}

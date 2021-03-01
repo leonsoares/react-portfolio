@@ -1,0 +1,74 @@
+.skill-set {
+  width: 350px;
+  /* height: 400px; */
+  position: relative;
+  z-index: 3;
+}
+
+.check-box {
+  position: absolute;
+  left: -10%;
+  z-index: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25px;
+  height: 25px;
+  border-radius: 10px 10% 10%;
+  background-color: #4d8aef;
+  box-shadow: 1px 1px 3px 0 #000;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-title {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  transition: all 400ms ease;
+}
+
+.metter-bar {
+  position: relative;
+  /* display: inline; */
+  opacity: 0;
+  top: 0.5px;
+  width: 300px;
+  height: 20px;
+  border-radius: 20px;
+  background-image: linear-gradient(
+    90deg,
+    #d0dbee 10%,
+    #7ea6e9 40%,
+    #4d8aef 61%,
+    #4d8aef 82%
+  );
+  -webkit-transition: all 200ms ease;
+  transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  /* transition-delay: 0.1s; */
+  z-index: 1;
+}
+
+.metter-pointer {
+  position: absolute;
+  opacity: 1;
+  bottom: -1px;
+  z-index: 1;
+  width: 8px;
+  height: 25px;
+  border: 0px solid #000;
+  border-radius: 10px;
+  background-color: #4d8aef;
+  box-shadow: 1px 1px 3px 0 #000;
+  -webkit-transition: all 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 900ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition-delay: 0.2s;
+  z-index: 2;
+}
+
+.skill-description {
+  margin-top: 10px;
+}

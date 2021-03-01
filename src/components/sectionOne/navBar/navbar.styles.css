@@ -1,0 +1,17 @@
+.navBar {
+  display: flex;
+  align-self: flex-end;
+  margin-right: 20%;
+  margin-top: 20px;
+}
+.nav-item {
+  font-size: x-large;
+  margin: 20px;
+  color: #4d8aef;
+  transition: transform 0.3s ease;
+}
+
+.nav-item:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
