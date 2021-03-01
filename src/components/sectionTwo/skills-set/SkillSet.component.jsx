@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import "./skills-set.styles.css"
 
 class SkillSet extends Component {
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
         this.state = {
             startAnimation: false,
             metterBar: {
@@ -40,17 +40,14 @@ class SkillSet extends Component {
             <div onMouseEnter={this.showMetter}
                  onMouseLeave={this.hideMetter}
                  className="skill-set">
+                     <h1> </h1>
                     <div className="check-box">✓</div>
-                    <h3 style={this.state.skillTitle} className="skill-title">JavaScript</h3>
+                    <h3 style={this.state.skillTitle} className="skill-title">{this.props.title}</h3>
                     <div  style={this.state.metterBar} className="metter-bar">
                         <div style={this.state.metterPointer} className="metter-pointer"></div>
                     </div>
                 <p className="skill-description">
-                    The base of my platforms used to create 
-                    dynamically updating content, 
-                    control multimedia, and animate images. 
-                    JS has been  in all of my web projects 
-                    for the past 3+ years.
+                {this.props.description}
                 </p>
 
             </div>
