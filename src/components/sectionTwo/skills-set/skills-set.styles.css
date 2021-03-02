@@ -1,13 +1,14 @@
 .skill-set {
-  width: 350px;
-  /* height: 400px; */
+  width: auto;
+  /* height: 10px; */
   position: relative;
   z-index: 3;
+  margin: 20px 40px;
 }
 
 .check-box {
   position: absolute;
-  left: -10%;
+  left: -12%;
   z-index: 2;
   display: -webkit-box;
   display: -webkit-flex;
@@ -25,7 +26,7 @@
 
 .skill-title {
   position: absolute;
-  top: 0;
+  /* top: 0; */
   margin: 0;
   padding: 0;
   transition: all 400ms ease;

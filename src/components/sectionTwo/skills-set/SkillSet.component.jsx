@@ -11,26 +11,26 @@ class SkillSet extends Component {
             },
             metterPointer: {
                 left: "0%", 
-                opacity: 0
+                opacity: "0"
             },
             skillTitle: {
-                top: "0%"
+                top: "14%"
             }
         }
     }
     showMetter = () => {
         this.setState({skillTitle: {top: "-3%"}})
         setTimeout(() => { this.setState(prevState =>({
-            metterBar: {opacity: 1},
-            metterPointer: {opacity: 1, left: "80%"}
+            metterBar: {opacity: "1"},
+            metterPointer: {opacity: "1", left: "80%"}
         }))}, 100)
     }
 
     hideMetter = () => {
-        this.setState(prevState =>({metterPointer: {opacity: 0, left: "0%"}}))
+        this.setState(prevState =>({metterPointer: {opacity: "0", left: "0%"}}))
         setTimeout(() => { this.setState(prevState =>({
-            metterBar: {opacity: 0},
-            skillTitle: {top: 0}
+            metterBar: {opacity: "0"},
+            skillTitle: {top: "14%"}
         }))}, 400)
     }
     
